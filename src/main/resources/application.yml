@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: MAxiaoyu521
+    url: jdbc:mysql://localhost:3306/chatdb?
+
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /chatdb
+logging:
+  pattern:
+    console: "%id-%msg%n"
+   # path:
+   # level: debug
+    level:
+      com.wechat.LoggerTest: debug
