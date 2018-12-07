@@ -27,6 +27,7 @@ public class CategoryServiceImplTest {
     public void findAll() throws Exception {
         List<ProductCategory> productCategorieslist = categoryService.findAll();
 //        System.out.println(productCategorieslist);
+
         Assert.assertNotEquals(0,productCategorieslist.size());
     }
 
@@ -34,7 +35,9 @@ public class CategoryServiceImplTest {
     public void findByCategoryTypeIn() {
 
         List<ProductCategory> productCategoryList = categoryService.findByCategoryTypeIn(Arrays.asList(2,3));
-        Assert.assertNotEquals(0,productCategoryList.size());
+        Assert.assertNotEquals(0, productCategoryList.size());
+
+
 
     }
 

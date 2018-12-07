@@ -23,8 +23,8 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTyoeList) {
-        return repository.findByCategoryTypeIn(categoryTyoeList);
+    public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
+        return repository.findByCategoryTypeIn(categoryTypeList);
     }
 
     @Override
