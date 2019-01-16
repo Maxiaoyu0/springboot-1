@@ -24,6 +24,7 @@ public class ProductCategoryRepositoryTest {
         System.out.println(repository.findById(1).toString());
     }
     @Test
+    @Transactional
     public void savaTest(){
         ProductCategory productCategory = new ProductCategory("小马最爱",3);
 

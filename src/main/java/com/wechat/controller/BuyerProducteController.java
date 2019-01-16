@@ -10,6 +10,7 @@ import com.wechat.service.CategoryService;
 import com.wechat.service.ProductService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +30,7 @@ public class BuyerProducteController {
     @Autowired
     private CategoryService categoryService;
 
-
+    @CrossOrigin
     @GetMapping("/list")
     public ResultVo list(){
         //1。查询所有的上架的商品
